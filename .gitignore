@@ -3,3 +3,5 @@
 typings
 *.css
 *.log
+node_modules
+.idea
