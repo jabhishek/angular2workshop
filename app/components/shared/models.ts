@@ -6,4 +6,5 @@ export class Villain{
 
 export class Planet{
     name:string;
+    climate:string;
 }

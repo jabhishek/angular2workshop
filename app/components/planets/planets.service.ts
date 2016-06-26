@@ -11,7 +11,16 @@ export class PlanetsService {
     constructor(private baseClient:BaseClient){
         
     }
-    
+
+    getPlanetDetail(id:number): Observable<Planet> {
+        //http://swapi.co/api/people/4/
+        return this.baseClient.get(`/planets/${id}`)
+            .map((response:Response) => {
+                let body = response.json();
+                return body;
+            })
+    }
+
     getPlanets():Observable<Planet[]> {
         var me = this;
         

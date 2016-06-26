@@ -5,6 +5,7 @@ import { EmpireComponent } from './components/empire/empire.component';
 import { EmpireDetailComponent } from './components/empire/empire-detail.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { PlanetDetailComponent } from './components/planets/planet-detail.component';
 
 export const routes: RouterConfig = [
   {
@@ -21,6 +22,11 @@ export const routes: RouterConfig = [
       path : 'empire/:id',
      
       component: EmpireDetailComponent
+  },
+  {
+      path : 'planet/:id',
+
+      component: PlanetDetailComponent
   },
   {
     path: 'home',

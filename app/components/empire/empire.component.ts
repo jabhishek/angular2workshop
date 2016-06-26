@@ -11,7 +11,9 @@ import { PlanetsComponent } from '../planets/planets.component';
    <div id='empire'>
     <h2>Empire</h2>
     <div class='data-row' *ngFor="let villain of villains; let i = index">
-       {{ villain.name }} {{ villain.assignedPlanet }}  <span class='assign' [hidden]='villain.assignedPlanet' (click)='assign(villain)'>assign</span> <a [routerLink]="['/empire', i +1 ]">Detail</a> 
+       {{ villain.name }} {{ villain.assignedPlanet }}  
+       <span class='assign' [hidden]='villain.assignedPlanet' (click)='assign(villain)'>assign</span> 
+       <a [routerLink]="['/empire', i +1 ]">Detail</a> 
     </div> 
     <planets></planets>
     <div>
